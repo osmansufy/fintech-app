@@ -65,3 +65,56 @@ img {
     width: 100%;
   }
 }
+.menu_trigger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  align-items: flex-end;
+  span {
+    background-color: #000;
+    height: 2px;
+    transition: 0.5s;
+    width: 35px;
+    margin: 5px 0;
+  }
+}
+.sideDrawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 200;
+  background-color: rgb(255, 255, 255);
+  overflow-y: auto;
+  padding: 0 0.5rem;
+  transform: translate(0);
+  transition: 0.3s ease-in-out;
+  width: 200px;
+}
+.sideDrawer_close {
+  // transform: translateX(-100%);
+  transform: translate(100%);
+  opacity: 0;
+  visibility: hidden;
+}
+.sideDrawer_show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header_overlay {
+  position: fixed;
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  background-color: #000;
+  z-index: 5;
+  transition: 0.3s ease-in-out;
+}
+
+.overlay_active {
+  visibility: visible;
+  opacity: 0.2;
+}
