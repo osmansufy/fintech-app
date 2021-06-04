@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  //   background-color: linear-gradient(180deg, #f2eef7 0%, #ffffff 100%);
+  background-color: #544f9d;
+
+  .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.16);
+    border-radius: 4px;
+  }
+}
+
+.wallet {
+  .singleWallet {
+    border-radius: 8px !important;
+  }
+}
+
+.activities {
+  background-color: #f6f8fc;
+  padding: 60px 0;
+
+  .actionWrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #525198;
+    padding: 10px 25px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+  }
+  .allActivitiesWrapper {
+    .navWrapper {
+      background-color: #e5edf9;
+      padding: 0.25rem;
+      border-radius: 4px;
+
+      .nav-item {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+
+.footer {
+  .footer-banner {
+    background-image: url("../images/banner.jpg");
+  }
+}
