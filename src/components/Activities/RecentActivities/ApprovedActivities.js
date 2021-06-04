@@ -1,14 +1,14 @@
 import React from "react";
 
-const ApprovedActivities = () => {
+import SingleActivity from "./SingleActivity";
+
+const ApprovedActivities = ({ approvedActivities }) => {
   return (
     <div className="listActivities">
+      <h6 className="font-weight-normal py-4 border-bottom">Today 15th june</h6>
       <ul className="list-group list-group-flush">
-        <li className="list-group-item">An item</li>
-        <li className="list-group-item">A second item</li>
-        <li className="list-group-item">A third item</li>
-        <li className="list-group-item">A fourth item</li>
-        <li className="list-group-item">And a fifth one</li>
+        {approvedActivities.length > 0 &&
+          approvedActivities.map((act) => <SingleActivity activity={act} />)}
       </ul>
     </div>
   );
