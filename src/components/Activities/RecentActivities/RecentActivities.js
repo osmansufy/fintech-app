@@ -23,7 +23,7 @@ const RecentActivities = () => {
   };
   return (
     <div>
-      <h4>Recent Activities</h4>
+      <h4 className="font-weight-normal mb-4">Recent Activities</h4>
 
       <div className="allActivitiesWrapper px-4 pt-2 pb-5 bg-white">
         <Tab.Container id="left-tabs-example" defaultActiveKey="recent">

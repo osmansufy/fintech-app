@@ -43,7 +43,7 @@ img {
 
 .activities {
   background-color: #f6f8fc;
-  padding: 60px 0;
+  padding: 10rem 0 3rem 0;
 
   .actionWrapper {
     display: flex;
@@ -74,7 +74,9 @@ img {
     width: 100%;
     background-position: top right;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
   }
   .appImg {
     max-width: 150px;

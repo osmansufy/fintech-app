@@ -1,12 +1,16 @@
 import React from "react";
 import payIcon from "../../../assets/images/payIcon.png";
-const SingleAction = () => {
+const SingleAction = ({ action }) => {
   return (
-    <div className="actionWrapper">
+    <div
+      className={`actionWrapper ${
+        action.actionType == "Withdraw" ? "bg-warning" : ""
+      }`}
+    >
       <div className="actionIcon">
-        <img src={payIcon} alt="" />
+        <img src={action.icon} alt="" />
       </div>
-      <h6>Pay</h6>
+      <h6 className="text-white">{action.actionType}</h6>
     </div>
   );
 };

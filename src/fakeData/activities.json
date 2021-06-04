@@ -10,7 +10,7 @@
     {
         "date":"2021-4-6T20:20:39+00:00",
         "status":"Approved",
-        "profile":"dev1.png",
+        "profile":"dev2.png",
         "name":"Jane Smith",
         "email":"jsmith@email.com",
         "amount":"1500.00"
@@ -18,7 +18,7 @@
     {
         "date":"2021-4-6T20:20:39+00:00",
         "status":"Approved",
-        "profile":"dev1.png",
+        "profile":"dev3.png",
         "name":"Jane Smith",
         "email":"jsmith@email.com",
         "amount":"1500.00"
@@ -26,7 +26,7 @@
     {
         "date":"2021-4-6T20:20:39+00:00",
         "status":"Pending",
-        "profile":"dev1.png",
+        "profile":"dev4.png",
         "name":"Jane Smith",
         "email":"jsmith@email.com",
         "amount":"1500.00"
