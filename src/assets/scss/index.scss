@@ -81,6 +81,20 @@ img {
       max-width: 250px;
     }
   }
+  .legal {
+    position: relative;
+    margin-right: 5px;
+    padding-right: 5px;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background-color: #aeafd0;
+    }
+  }
   .appImg {
     max-width: 150px;
     width: 100%;

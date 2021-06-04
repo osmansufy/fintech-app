@@ -1,13 +1,14 @@
 import React from "react";
-import SingleActivity from "./SingleActivity";
 
-const PendingActivities = ({ pendingActivities }) => {
+import SingleActivity from "../SingleActivity";
+
+const ApprovedActivities = ({ approvedActivities }) => {
   return (
     <div className="listActivities">
       <h6 className="font-weight-normal py-4 border-bottom">Today 15th june</h6>
       <ul className="list-group list-group-flush">
-        {pendingActivities.length > 0 &&
-          pendingActivities.map((act) => (
+        {approvedActivities.length > 0 &&
+          approvedActivities.map((act) => (
             <SingleActivity key={act.id} activity={act} />
           ))}
       </ul>
@@ -15,4 +16,4 @@ const PendingActivities = ({ pendingActivities }) => {
   );
 };
 
-export default PendingActivities;
+export default ApprovedActivities;

@@ -3,9 +3,10 @@ import { Container } from "react-bootstrap";
 import playStoreImg from "../../assets/images/Playstore.png";
 import iStore from "../../assets/images/iStore.png";
 import iPhone from "../../assets/images/iPhone.png";
+import CopyRight from "./CopyRight/CopyRight";
 const Footer = () => {
   return (
-    <section className="footer">
+    <section className="footer pb-5">
       <Container>
         <div className="row bg-white">
           <div className="col-md-6">
@@ -30,6 +31,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <CopyRight />
       </Container>
     </section>
   );

@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Nav, Tab } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { activitiesAsync } from "../../../features/fintechActivities/activitiesSlice";
-import ApprovedActivities from "./ApprovedActivities";
-import PendingActivities from "./PendingActivities";
+import ApprovedActivities from "./ApprovedActivities/ApprovedActivities";
+import PendingActivities from "./PendingActivities/PendingActivities";
 
 const RecentActivities = () => {
   const [activitiesTab, setActivitiesTab] = useState("");
@@ -18,9 +18,6 @@ const RecentActivities = () => {
   const pendingActivities = useSelector(
     (state) => state.activities.pendingActivities
   );
-  const onChangeTab = (eventKey) => {
-    console.log(eventKey);
-  };
   return (
     <div>
       <h4 className="font-weight-normal mb-4">Recent Activities</h4>
@@ -31,20 +28,12 @@ const RecentActivities = () => {
             <div className="navWrapper">
               <Nav variant="pills">
                 <Nav.Item>
-                  <Nav.Link
-                    onSelect={(eventKey) => onChangeTab(eventKey)}
-                    className="px-4"
-                    eventKey="recent"
-                  >
+                  <Nav.Link className="px-4" eventKey="recent">
                     Recent
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link
-                    onSelect={(eventKey) => onChangeTab(eventKey)}
-                    className="px-4"
-                    eventKey="pending"
-                  >
+                  <Nav.Link className="px-4" eventKey="pending">
                     Pending
                   </Nav.Link>
                 </Nav.Item>
