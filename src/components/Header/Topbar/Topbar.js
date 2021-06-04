@@ -10,7 +10,7 @@ const Topbar = () => {
     setDrawerShow(false);
   };
   return (
-    <section className="tapBar py-3">
+    <section className="topBar py-3">
       <Container>
         <Navbar collapseOnSelect expand="md" bg="transparent" variant="dark">
           <Navbar.Brand href="#home">Fintech App</Navbar.Brand>

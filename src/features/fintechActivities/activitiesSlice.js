@@ -2,8 +2,8 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 import activitiesData from "../../fakeData/activities.json";
 const initialState = {
-  totalBalance: +"",
-  availableBalance: "",
+  totalBalance: Number("15000"),
+  availableBalance: Number("12000"),
   approvedActivities: [],
   pendingActivities: [],
 };
@@ -31,7 +31,12 @@ export const activitiesSLice = createSlice({
   name: "counter",
   initialState,
   // The `reducers` field lets us define reducers and generate associated actions
-  reducers: {},
+  reducers: {
+    addNewBalance: (state, action) => {
+      state.totalBalance += action.payload;
+      state.availableBalance += action.payload;
+    },
+  },
 
   extraReducers: (builder) => {
     builder
@@ -42,5 +47,5 @@ export const activitiesSLice = createSlice({
       });
   },
 });
-
+export const { addNewBalance } = activitiesSLice.actions;
 export default activitiesSLice.reducer;
