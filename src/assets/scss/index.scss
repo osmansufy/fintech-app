@@ -1,7 +1,14 @@
 * {
   box-sizing: border-box;
 }
-
+html {
+  font-size: 12px;
+}
+img {
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+}
 .header {
   //   background-color: linear-gradient(180deg, #f2eef7 0%, #ffffff 100%);
   background-color: #544f9d;
@@ -45,7 +52,16 @@
 }
 
 .footer {
+  background-color: #f6f8fc;
   .footer-banner {
-    background-image: url("../images/banner.jpg");
+    background-image: url("../images/footerBg.png");
+    width: 100%;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .appImg {
+    max-width: 150px;
+    width: 100%;
   }
 }

@@ -5,7 +5,7 @@
         "profile":"dev1.png",
         "name":"Jane Smith",
         "email":"jsmith@email.com",
-        "amount":"1500"
+        "amount":"1500.00"
     },
     {
         "date":"2021-4-6T20:20:39+00:00",
@@ -13,7 +13,7 @@
         "profile":"dev1.png",
         "name":"Jane Smith",
         "email":"jsmith@email.com",
-        "amount":"1500"
+        "amount":"1500.00"
     },
     {
         "date":"2021-4-6T20:20:39+00:00",
@@ -21,7 +21,7 @@
         "profile":"dev1.png",
         "name":"Jane Smith",
         "email":"jsmith@email.com",
-        "amount":"1500"
+        "amount":"1500.00"
     },
     {
         "date":"2021-4-6T20:20:39+00:00",
@@ -29,6 +29,6 @@
         "profile":"dev1.png",
         "name":"Jane Smith",
         "email":"jsmith@email.com",
-        "amount":"1500"
+        "amount":"1500.00"
     }
 ]
