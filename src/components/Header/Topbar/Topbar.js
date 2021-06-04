@@ -44,7 +44,7 @@ const Topbar = () => {
             </div>
           </div>
           <div className="d-lg-none">
-            <span class="menu_trigger" onClick={() => setDrawerShow(true)}>
+            <span className="menu_trigger" onClick={() => setDrawerShow(true)}>
               <span></span>
               <span></span>
               <span></span>

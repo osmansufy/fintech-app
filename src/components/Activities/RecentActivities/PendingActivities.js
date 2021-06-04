@@ -7,7 +7,9 @@ const PendingActivities = ({ pendingActivities }) => {
       <h6 className="font-weight-normal py-4 border-bottom">Today 15th june</h6>
       <ul className="list-group list-group-flush">
         {pendingActivities.length > 0 &&
-          pendingActivities.map((act) => <SingleActivity activity={act} />)}
+          pendingActivities.map((act) => (
+            <SingleActivity key={act.id} activity={act} />
+          ))}
       </ul>
     </div>
   );

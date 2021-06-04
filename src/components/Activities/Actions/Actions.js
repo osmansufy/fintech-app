@@ -26,7 +26,7 @@ const Actions = () => {
   return (
     <div className="row">
       {allActions.map((action) => (
-        <div className="col-6 mb-3">
+        <div key={action.actionType} className="col-6 mb-3">
           <SingleAction action={action} />
         </div>
       ))}

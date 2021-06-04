@@ -1,3 +1,6 @@
+@import "_mixin.scss";
+@import "_variables.scss";
+
 * {
   box-sizing: border-box;
 }
@@ -10,12 +13,11 @@ img {
   max-width: 100%;
 }
 .header {
-  //   background-color: linear-gradient(180deg, #f2eef7 0%, #ffffff 100%);
-  background-color: #544f9d;
+  background-color: $primary-bg-color;
 
   .nav-link.active {
     background-color: rgba(255, 255, 255, 0.16);
-    border-radius: 4px;
+    border-radius: $border-radius/2;
   }
   .topBar {
     border-bottom: 1px solid rgba(255, 255, 255, 0.24);
@@ -32,8 +34,8 @@ img {
     }
   }
   .addBalance {
-    /* border: dashed; */
-    border: 1px dashed #54509d !important;
+    cursor: pointer;
+    border: 1px dashed $primary-bg-color !important;
     border-radius: 8px;
   }
   .cardWrapper {
@@ -46,19 +48,17 @@ img {
   padding: 10rem 0 3rem 0;
 
   .actionWrapper {
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    background-color: #525198;
+    background-color: $primary-bg-color;
     padding: 10px 25px;
-    border-radius: 8px;
-    justify-content: center;
-    align-items: center;
+    border-radius: $border-radius;
   }
   .allActivitiesWrapper {
     .navWrapper {
       background-color: #e5edf9;
       padding: 0.25rem;
-      border-radius: 4px;
+      border-radius: $border-radius/2;
 
       .nav-item {
         font-size: 0.7rem;
@@ -70,13 +70,16 @@ img {
 .footer {
   background-color: #f6f8fc;
   .footer-banner {
+    @include flex-center;
     background-image: url("../images/footerBg.png");
     width: 100%;
     background-position: top right;
     background-repeat: no-repeat;
     background-size: contain;
-    display: flex;
-    justify-content: center;
+
+    .footerPhoneImg {
+      max-width: 250px;
+    }
   }
   .appImg {
     max-width: 150px;
@@ -97,20 +100,16 @@ img {
   }
 }
 .sideDrawer {
-  position: fixed;
-  top: 0;
-  right: 0;
+  @include position-fixed-right;
   height: 100vh;
   z-index: 200;
   background-color: rgb(255, 255, 255);
   overflow-y: auto;
   padding: 0 0.5rem;
   transform: translate(0);
-  transition: 0.3s ease-in-out;
   width: 200px;
 }
 .sideDrawer_close {
-  // transform: translateX(-100%);
   transform: translate(100%);
   opacity: 0;
   visibility: hidden;
@@ -121,15 +120,12 @@ img {
 }
 
 .header_overlay {
-  position: fixed;
-  content: "";
-  top: 0;
+  @include position-fixed-right;
   width: 100%;
   height: 100%;
-  right: 0;
+
   background-color: #000;
   z-index: 5;
-  transition: 0.3s ease-in-out;
 }
 
 .overlay_active {
