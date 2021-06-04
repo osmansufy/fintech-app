@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import Navbar from "./Topbar/Topbar";
 import Wallet from "../Wallet/Wallet";
 

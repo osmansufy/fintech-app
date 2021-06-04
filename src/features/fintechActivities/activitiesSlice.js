@@ -18,8 +18,8 @@ export const activitiesAsync = createAsyncThunk(
   "activities/fetchActivity",
   async () => {
     const response = await activitiesData;
-    const approvedData = response.filter((res) => res.status == "Approved");
-    const pendingData = response.filter((res) => res.status == "Pending");
+    const approvedData = response.filter((res) => res.status === "Approved");
+    const pendingData = response.filter((res) => res.status === "Pending");
     return {
       approvedData,
       pendingData,

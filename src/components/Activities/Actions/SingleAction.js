@@ -1,5 +1,4 @@
 import React from "react";
-import payIcon from "../../../assets/images/payIcon.png";
 const SingleAction = ({ action }) => {
   return (
     <div
