@@ -11,7 +11,7 @@ const AddBalance = () => {
     <>
       <Card
         onClick={handleShow}
-        className="mr-4 shadow singleWallet addBalance"
+        className="mr-4 shadow singleWallet p-md-0 py-4 addBalance"
       >
         <div className="d-flex h-100 justify-content-center align-items-center">
           <h5 className="font-weight-normal">Add Balance</h5>
